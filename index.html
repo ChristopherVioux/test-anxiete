@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire d'auto-évaluation de l'anxiété</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_content">
+        <div id="header_screen" class="header_screen">
+            <button id="js-btn-tts" class="js-btn-tts">Lecture</button>
+            <button id="js-btn-stop-tts" class="js-btn-stop-tts">Stop</button>
+            <h1 class="title"> Questionnaire d'auto-évaluation de l'anxiété </h1>
+            <span id="span">L'estime de soi est définie comme le jugement ou l'évaluation que l'on fait de soi-même, de sa valeur personnelle. De façon plus simple, l'estime de soi peut-être également assimilée à l'affirmation de soi. L'estime de soi est un facteur essentiel dans la performance sportive. (Voir article:"encore une erreur d'arbitrage ou comment maintenir une estime de soi positive...")
+            <p>En répondant à ce test, vous pourrez ainsi obtenir une évaluation de votre estime de soi.</p></span>
+            <p class="sous_title"> Il y a <span class="nbrQuestion"> ?? </span> propositions </p>
+            <div>
+                <form name="RegForm" action="#" onsubmit="return startQuestions()">
+                    <input type="text" name="Code" placeholder="Renseignez votre code d'accès">
+                </form>
+                <button id="btn_start" class="start"> Commencer </button>
+            </div>
+        </div>
+        <div id="questions_screen" class="questions_screen rate" >
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
