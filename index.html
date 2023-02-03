@@ -13,8 +13,8 @@
             <button id="js-btn-tts" class="js-btn-tts">Lecture</button>
             <button id="js-btn-stop-tts" class="js-btn-stop-tts">Stop</button>
             <h1 class="title"> Questionnaire d'auto-évaluation de l'anxiété </h1>
-            <span id="span">L'estime de soi est définie comme le jugement ou l'évaluation que l'on fait de soi-même, de sa valeur personnelle. De façon plus simple, l'estime de soi peut-être également assimilée à l'affirmation de soi. L'estime de soi est un facteur essentiel dans la performance sportive. (Voir article:"encore une erreur d'arbitrage ou comment maintenir une estime de soi positive...")
-            <p>En répondant à ce test, vous pourrez ainsi obtenir une évaluation de votre estime de soi.</p></span>
+            <span id="span">Dans quelle mesure chacun de ces symptômes vous ont-ils dérangés ou inquiétés au cours des 7 derniers jours?
+            <p>Sélectionnez la cote qui correspond le mieux à votre état</p></span>
             <p class="sous_title"> Il y a <span class="nbrQuestion"> ?? </span> propositions </p>
             <div>
                 <form name="RegForm" action="#" onsubmit="return startQuestions()">
@@ -23,7 +23,17 @@
                 <button id="btn_start" class="start"> Commencer </button>
             </div>
         </div>
+
         <div id="questions_screen" class="questions_screen rate" >
+        </div>
+
+        <div id="result_screen" class="result_screen rate">
+            <button id="js-btn-result-tts" class="js-btn-result-tts">Lecture</button>
+            <button id="js-btn-stop-result-tts" class="js-btn-stop-result-tts">Stop</button>
+            <h2 class=""> Résultat </h2>
+            <!-- <span class=""> Vous avez obtenu <span id="nbrCorrects"> ?? </span> points. </span> -->
+            <!-- <p class="result_scale">(Résultat compris entre 1 et 40 points)</p> -->
+            <p class="" id="resultat">??</p>
         </div>
     </div>
     
